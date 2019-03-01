@@ -1,5 +1,8 @@
 package fundamentals.labs;
 
+import java.util.Scanner;
+import java.util.concurrent.ScheduledExecutorService;
+
 /**
  * Fundamentals Exercise 4: Volume and Surface Area
  *
@@ -12,10 +15,30 @@ public class Exercise_04 {
 
     public static void main(String[] args) {
 
-        System.out.println("Print out the result!");
+        Double pi = Math.PI;
+        Double radius;
+        Double height;
+        Double area;
+        Double volume;
 
-        // write code to print out "Calculate the volume and surface area of a cylinder with aa radius of 3.14 and a height of 5!" below
-        System.out.print ("Print out the result");
+        Scanner input = new Scanner(System.in);
+        //input variables
+        System.out.print("Type in radius for cylinder: ");
+        radius = input.nextDouble();
+        System.out.print("Type in the height for the cylinder: ");
+        height = input.nextDouble();
+
+        //calculate area and volume
+        area = radius*radius*pi;
+        volume = area*height;
+
+        //output data
+        System.out.println("area is: " + area);
+        System.out.println("volume is:" + volume);
+
+
+
+
 
 
 
